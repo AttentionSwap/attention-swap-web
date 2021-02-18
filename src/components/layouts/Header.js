@@ -8,7 +8,6 @@ import { Pager, Button } from '../elements';
 
 const Header = () => {
   const data = useConnectionConfig();
-
   const { wallet, connected } = useWallet();
 
   console.log(data);

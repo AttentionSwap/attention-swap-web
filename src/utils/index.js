@@ -29,7 +29,7 @@ export function useLocalStorageState(key = '', defaultState = '') {
   return [state, setLocalStorageState];
 }
 
-// shorten the checksummed version of the input address to have 4 characters at start and end
+// shorten the checksummed version of the input address to have 6 characters at start and end
 export function shortenAddress(address, chars = 6) {
   return `${address.slice(0, chars)}...${address.slice(-chars)}`;
 }
