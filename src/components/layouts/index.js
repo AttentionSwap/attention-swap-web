@@ -5,9 +5,9 @@ import Header from './Header';
 const Layout = ({ children }) => (
   <>
     <Header />
-    <body className="h-screen bg-gradient-to-r from-primary to-secondary">
+    <div className="h-screen bg-gradient-to-r from-primary to-secondary">
       {children}
-    </body>
+    </div>
   </>
 );
 

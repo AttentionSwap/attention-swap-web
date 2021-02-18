@@ -5,25 +5,25 @@ export const NETWORK_ENDPOINTS = [
     name: 'mainnet-beta',
     endpoint: 'https://solana-api.projectserum.com/',
     tokenApi:
-      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/mainnet-beta.json`',
+      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/mainnet-beta.json',
   },
   {
     name: 'testnet',
     endpoint: clusterApiUrl('testnet'),
     tokenApi:
-      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/testnet.json`',
+      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/testnet.json',
   },
   {
     name: 'devnet',
     endpoint: clusterApiUrl('devnet'),
     tokenApi:
-      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/devnet.json`',
+      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/devnet.json',
   },
   {
     name: 'localnet',
     endpoint: 'http://127.0.0.1:8899',
     tokenApi:
-      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/localnet.json`',
+      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/localnet.jsonß',
   },
 ];
 

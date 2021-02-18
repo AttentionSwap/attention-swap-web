@@ -44,7 +44,8 @@ export function ConnectionProvider({ children }) {
       .then((res) => res.json())
       .then((list) => {
         const knownMints = list.reduce((map, item) => {
-          map.set(item.mintAddress, item);
+          // map.set(item.mintAddress, item);
+          console.log(map, item);
           return map;
         });
 
