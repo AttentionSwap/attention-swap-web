@@ -48,16 +48,16 @@ const Header = () => {
               {connected ? (
                 <>
                   <div className="flex-none py-3 flex mr-4">
-                    <div className="flex-none flex p-2 bg-white rounded">
+                    <div className="flex-none flex p-2 bg-white rounded-lg shadow-md">
                       <p>0 ATTN</p>
                     </div>
                   </div>
                   <div className="flex-none py-3 flex mr-4">
-                    <div className="flex justify-around bg-white rounded">
+                    <div className="flex justify-around bg-white rounded-lg shadow-md">
                       <div className="flex-none flex p-2 ">
-                        <p>23.06 SOL</p>
+                        <p>0 SOL</p>
                       </div>
-                      <div className="flex-none flex rounded bg-gray-200 p-2 ">
+                      <div className="flex-none flex rounded-lg shadow-md bg-gray-200 p-2 ">
                         <p> {shortenAddress(`${wallet.publicKey}`)}</p>
                       </div>
                     </div>

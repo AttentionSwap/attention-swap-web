@@ -30,6 +30,6 @@ export function useLocalStorageState(key = '', defaultState = '') {
 }
 
 // shorten the checksummed version of the input address to have 4 characters at start and end
-export function shortenAddress(address, chars = 4) {
+export function shortenAddress(address, chars = 6) {
   return `${address.slice(0, chars)}...${address.slice(-chars)}`;
 }
