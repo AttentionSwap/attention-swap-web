@@ -2,13 +2,14 @@
 import React from 'react';
 import { useConnectionConfig } from '../../utils/connection';
 import { useWallet } from '../../utils/wallet';
+import { shortenAddress } from '../../utils';
 
 import { Pager, Button } from '../elements';
 
 const Header = () => {
   const data = useConnectionConfig();
 
-  const { wallet } = useWallet();
+  const { wallet, connected } = useWallet();
 
   console.log(data);
   return (
@@ -44,9 +45,29 @@ const Header = () => {
               </div>
             </div>
             <div className="flex justify-start">
-              <div className="flex-none py-3 flex mr-4">
-                <Button name="Connect" onClick={() => wallet.connect()} />
-              </div>
+              {connected ? (
+                <>
+                  <div className="flex-none py-3 flex mr-4">
+                    <div className="flex-none flex p-2 bg-white rounded">
+                      <p>0 ATTN</p>
+                    </div>
+                  </div>
+                  <div className="flex-none py-3 flex mr-4">
+                    <div className="flex justify-around bg-white rounded">
+                      <div className="flex-none flex p-2 ">
+                        <p>23.06 SOL</p>
+                      </div>
+                      <div className="flex-none flex rounded bg-gray-200 p-2 ">
+                        <p> {shortenAddress(`${wallet.publicKey}`)}</p>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <div className="flex-none py-3 flex mr-4">
+                  <Button name="Connect" onClick={() => wallet.connect()} />
+                </div>
+              )}
               <div className="flex-none py-3 flex">
                 <Button secondary name="W3 Connect" />
               </div>
