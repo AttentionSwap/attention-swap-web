@@ -23,7 +23,7 @@ export const NETWORK_ENDPOINTS = [
     name: 'localnet',
     endpoint: 'http://127.0.0.1:8899',
     tokenApi:
-      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/localnet.jsonß',
+      'https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/localnet.json',
   },
 ];
 
